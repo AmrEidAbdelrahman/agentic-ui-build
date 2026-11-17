@@ -73,3 +73,4 @@ The loader runs as a `pre` rule, before Babel, SWC or ts-loader. If you prefer t
 | `exclude` | `/[\\/]node_modules[\\/]/` | Files to skip. |
 
 Works with any JSX framework that passes host-element attributes to the DOM, such as React, Preact and Solid. Vue and Svelte templates are not covered.
+# agentic-ui-build
