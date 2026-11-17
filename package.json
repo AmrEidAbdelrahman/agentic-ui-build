@@ -1,0 +1,46 @@
+{
+  "name": "@agentic-ui/build-plugin",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "description": "Vite, webpack and Next.js plugin that adds data-source=\"file:line:col\" and data-component to JSX host elements, so Agentic UI notes from staging name the component and file.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "import": "./dist/vite.js",
+      "require": "./dist/vite.cjs"
+    },
+    "./webpack": {
+      "types": "./dist/webpack.d.ts",
+      "import": "./dist/webpack.js",
+      "require": "./dist/webpack.cjs"
+    },
+    "./next": {
+      "types": "./dist/next.d.ts",
+      "import": "./dist/next.js",
+      "require": "./dist/next.cjs"
+    },
+    "./loader": "./dist/loader.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@babel/parser": "^8.1.2",
+    "magic-string": "^1.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmrEidAbdelrahman/agentic-ui-build-plugin.git"
+  }
+}
